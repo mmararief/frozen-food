@@ -1,15 +1,5 @@
 <?php
-/*
-  | Source Code Aplikasi Toko PHP & MySQL
-  | 
-  | @package   : kynan
-  | @file	   : background.php 
-  | @author    : kynan@gmail.com
-  | 
-  | 
-  | 
-  | 
- */
+
 require '../../koneksi/koneksi.php';
 $title_web = 'Background';
 include '../header.php';
@@ -141,7 +131,7 @@ if (!empty($_POST['title'])) {
                                         </div>
                                         <div class="form-group">
                                             <label for="">Teks Promosi</label>
-                                            <input type="text" class="form-control" value="<?= $edit->prom; ?>" name="prom" id="password" />
+                                            <textarea class="form-control" name="prom" id="password"><?= $edit->prom; ?></textarea>
                                         </div><br>
                                         <button type="submit" class="btn btn-primary">
                                             Simpan

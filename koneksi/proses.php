@@ -1,15 +1,5 @@
 <?php
-/*
-  | Source Code Aplikasi Toko PHP & MySQL
-  | 
-  | @package   : kynan
-  | @file	   : proses.php 
-  | @author    : kynan@gmail.com
-  | 
-  | 
-  | 
-  | 
- */
+
 ?>
 
 <!DOCTYPE html>
@@ -205,6 +195,19 @@ if ($_GET['id'] == 'konfirmasi') {
 
     $stmt = $koneksi->prepare('INSERT INTO konfirmasi (tanggal, via, nama, nama_produk, whatsapp, alamat, metode_pembayaran, jumlah, status) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)');
     $stmt->execute([$tanggal, $via, $nama, $nama_produk, $whatsapp, $alamat, $metode_pembayaran, $total_belanja, $status]);
+    // Save order details in session
+    $_SESSION['order_details'] = [
+
+        'tanggal' => $tanggal,
+        'via' => $via,
+        'nama' => $nama,
+        'nama_produk' => $nama_produk,
+        'whatsapp' => $whatsapp,
+        'alamat' => $alamat,
+        'metode_pembayaran' => $metode_pembayaran,
+        'total_belanja' => $total_belanja,
+        'status' => $status
+    ];
 
     // Hapus keranjang setelah konfirmasi
     unset($_SESSION['keranjang']);

@@ -1,12 +1,5 @@
 <?php
-/*
-  | Source Code Aplikasi Toko PHP & MySQL
-  | 
-  | @package   : kynan
-  | @file	   : produk.php 
-  | @author    : kynan@gmail.com
-  | 
- */
+
 require '../../koneksi/koneksi.php';
 $title_web = 'Daftar Produk';
 include '../header.php';

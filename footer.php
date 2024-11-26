@@ -90,7 +90,7 @@ $jumlah_keranjang = isset($_SESSION['keranjang']) ? count($_SESSION['keranjang']
 
                 <div class="col-lg-3 col-md-6 footer-links" data-aos="fade-up" data-aos-delay="300">
                     <h4>Tentang Kami</h4>
-                    <p>Dapur Kynan adalah UMKM Kreatif yang berdiri sejak 2015 di Bekasi yang menyediakan cemilan homemade dengan bahan berkualitas tinggi.</p>
+                    <p>UMKM Kreatif makanan beku dengan bahan berkualitas tinggi.</p>
                     <div class="social-links mt-3">
                         <a target="_blank" href="<?= $info_web->wa; ?>" class="instagram"><i class="fa fa-whatsapp"></i></a>
                         <a target="_blank" href="<?= $info_web->ig; ?>" class="instagram"><i class="fa fa-instagram"></i></a>

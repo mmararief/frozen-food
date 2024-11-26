@@ -1,15 +1,5 @@
 <?php
-/*
-  | Source Code Aplikasi Toko PHP & MySQL
-  |
-  | @package   : kynan
-  | @file	   : proses.php
-  | @author    : kynan@gmail.com
-  | 
-  | 
-  | 
-  | 
- */
+
 ?>
 
 <!DOCTYPE html>
@@ -75,7 +65,7 @@ if ($_GET['aksi'] == 'tambah') {
 
 if (isset($_GET['aksi']) && $_GET['aksi'] == 'edit') {
     // Jika permintaan adalah untuk mengedit kategori
-    $id = $_GET['id_kategori'];
+    $id = $_GET['id'];
     $nama_kategori = $_POST['nama_kategori']; // Ambil data nama kategori yang baru dari form
 
     $sql = "UPDATE kategori SET nama_kategori = ? WHERE id_kategori = ?";

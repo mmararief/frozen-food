@@ -137,7 +137,7 @@ $pagination_link_page = $pagination_link . (empty($query_params) ? '' : '&') . '
 <body>
     <div class="container my-4">
         <div class="card mb-4">
-            <img src="assets/img/iklan/kynnannn.png" alt="Daftar Produk" class="card-img-top">
+            <img src="assets/img/slide/slide-frozen/slide2.jpg" alt="Daftar Produk" class="card-img-top">
             <div class="card-img-overlay d-flex align-items-center justify-content-center">
                 <h2 class="card-title text-white font-weight-bold" style="font-size: 48px; text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);">Daftar Produk</h2>
             </div>

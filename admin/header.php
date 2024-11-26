@@ -1,15 +1,5 @@
 <?php
-/*
-  | Source Code Aplikasi Toko PHP & MySQL
-  | 
-  | @package   : kynan
-  | @file	   : header.php 
-  | @author    : kynan@gmail.com
-  | 
-  | 
-  | 
-  | 
- */
+
 session_start();
 if (!empty($_SESSION['USER']['level'] == 'admin')) {
 } else {
@@ -28,7 +18,7 @@ $hasil_login = $row->fetch();
 <html lang="en">
 
 <head>
-    <title><?php echo $title_web; ?> | Kynan</title>
+    <title><?php echo $title_web; ?> Duta Frozen</title>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta content="width=device-width, initial-scale=1.0" name="viewport">

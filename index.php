@@ -1,15 +1,5 @@
 <?php
-/*
-  | Source Code Aplikasi Toko PHP & MySQL
-  | 
-  | @package   : kynan
-  | @file	   : index.php 
-  | @author    : kynan@gmail.com
-  | 
-  | 
-  | 
-  | 
- */
+
 require 'koneksi/koneksi.php';
 include 'header.php';
 
@@ -31,6 +21,17 @@ include 'header.php';
             max-height: 500px;
             height: auto;
             object-fit: cover;
+        }
+
+        .img-fix {
+            width: 100%;
+            /* Mengatur lebar gambar agar sesuai dengan lebar card */
+            height: auto;
+            /* Tinggi otomatis untuk menjaga rasio */
+            aspect-ratio: 4/2;
+            /* Mengatur rasio aspek 3:4 */
+            object-fit: cover;
+            /* Memastikan gambar mengisi area tanpa distorsi */
         }
     </style>
 </head>
@@ -81,37 +82,37 @@ include 'header.php';
                             </ol>
                             <div class="carousel-inner">
                                 <div class="carousel-item active">
-                                    <img src="assets/img/slide/slide1.png" class="d-block w-100" alt="1">
+                                    <img src="assets/img/slide/slide-frozen/slide1.jpg" class="d-block w-100" alt="1">
                                 </div>
                                 <div class="carousel-item">
-                                    <img src="assets/img/slide/slide2.png" class="d-block w-100" alt="2">
+                                    <img src="assets/img/slide/slide-frozen/slide2.jpg" class="d-block w-100" alt="2">
                                 </div>
                                 <div class="carousel-item">
-                                    <img src="assets/img/slide/slide3.png" class="d-block w-100" alt="3">
+                                    <img src="assets/img/slide/slide-frozen/slide3.jpg" class="d-block w-100" alt="3">
                                 </div>
                                 <div class="carousel-item">
-                                    <img src="assets/img/slide/slide4.png" class="d-block w-100" alt="4">
+                                    <img src="assets/img/slide/slide-frozen/slide4.jpg" class="d-block w-100" alt="4">
                                 </div>
                                 <div class="carousel-item">
-                                    <img src="assets/img/slide/slide5.png" class="d-block w-100" alt="5">
+                                    <img src="assets/img/slide/slide-frozen/slide5.jpg" class="d-block w-100" alt="5">
                                 </div>
                                 <div class="carousel-item">
-                                    <img src="assets/img/slide/slide6.png" class="d-block w-100" alt="6">
+                                    <img src="assets/img/slide/slide-frozen/slide6.jpg" class="d-block w-100" alt="6">
                                 </div>
                                 <div class="carousel-item">
-                                    <img src="assets/img/slide/slide7.png" class="d-block w-100" alt="7">
+                                    <img src="assets/img/slide/slide-frozen/slide7.jpg" class="d-block w-100" alt="7">
                                 </div>
                                 <div class="carousel-item">
-                                    <img src="assets/img/slide/slide8.png" class="d-block w-100" alt="8">
+                                    <img src="assets/img/slide/slide-frozen/slide8.jpg" class="d-block w-100" alt="8">
                                 </div>
                                 <div class="carousel-item">
-                                    <img src="assets/img/slide/slide9.png" class="d-block w-100" alt="9">
+                                    <img src="assets/img/slide/slide-frozen/slide9.jpg" class="d-block w-100" alt="9">
                                 </div>
                                 <div class="carousel-item">
-                                    <img src="assets/img/slide/slide10.png" class="d-block w-100" alt="10">
+                                    <img src="assets/img/slide/slide-frozen/slide10.jpg" class="d-block w-100" alt="10">
                                 </div>
                                 <div class="carousel-item">
-                                    <img src="assets/img/slide/slide11.png" class="d-block w-100" alt="11">
+                                    <img src="assets/img/slide/slide-frozen/slide11.jpg" class="d-block w-100" alt="11">
                                 </div>
                             </div>
                             <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
@@ -141,9 +142,9 @@ include 'header.php';
                 <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-left" data-aos-delay="300">
                     <a href="produk.php?cari=&category=1" title="Lihat Cake dan Roti">
                         <div class="card">
-                            <img class="card-img-top" src="assets/img/iklan/1.jpg" alt="Cake dan Roti">
+                            <img class="card-img-top img-fix" src="assets/img/iklan/1.jpg" alt="Cake dan Roti">
                             <div class="card-body icon-box" style="text-align: center;">
-                                <h4 class="card-title"><a href="produk.php?cari=&category=1" title="Lihat Cake dan Roti">Cake dan Roti</a></h4>
+                                <h4 class="card-title"><a href="produk.php?cari=&category=1" title="Lihat Cake dan Roti">Cemilan</a></h4>
                             </div>
                         </div>
                     </a>
@@ -152,9 +153,9 @@ include 'header.php';
                 <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-left" data-aos-delay="300">
                     <a href="produk.php?cari=&category=8" title="Lihat Cemilan">
                         <div class="card">
-                            <img class="card-img-top" src="assets/img/iklan/2.jpg" alt="Cemilan">
+                            <img class="card-img-top img-fix" src="assets/img/iklan/2.jpg" alt="Cemilan">
                             <div class="card-body icon-box" style="text-align: center;">
-                                <h4 class="card-title"><a href="produk.php?cari=&category=8" title="Lihat Cemilan">Cemilan</a></h4>
+                                <h4 class="card-title"><a href="produk.php?cari=&category=8" title="Lihat Cemilan">Kue</a></h4>
                             </div>
                         </div>
                     </a>
@@ -163,30 +164,33 @@ include 'header.php';
                 <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-left" data-aos-delay="300">
                     <a href="produk.php?cari=&category=9" title="Lihat Healthy Drink">
                         <div class="card">
-                            <img class="card-img-top" src="assets/img/iklan/3.jpg" alt="Healthy Drink">
+                            <img class="card-img-top img-fix" src="assets/img/iklan/3.jpg" alt="Healthy Drink">
                             <div class="card-body icon-box" style="text-align: center;">
-                                <h4 class="card-title"><a href="produk.php?cari=&category=9" title="Lihat Healthy Drink">Healthy Drink</a></h4>
+                                <h4 class="card-title"><a href="produk.php?cari=&category=9" title="Lihat Healthy Drink">Frozen Food</a></h4>
                             </div>
                         </div>
                     </a>
                 </div>
-
                 <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-left" data-aos-delay="300">
                     <a href="produk.php?cari=&category=10" title="Lihat Sambal dan Bumbu">
                         <div class="card">
-                            <img class="card-img-top" src="assets/img/iklan/4.jpg" alt="Sambal dan Bumbu">
+                            <img class="card-img-top img-fix" src="assets/img/slide/slide-frozen/slide8.jpg" alt="Sambal dan Bumbu">
                             <div class="card-body icon-box" style="text-align: center;">
-                                <h4 class="card-title"><a href="produk.php?cari=&category=10" title="Lihat Sambal dan Bumbu">Sambal dan Bumbu</a></h4>
+                                <h4 class="card-title"><a href="produk.php?cari=&category=10" title="Lihat Sambal dan Bumbu">Buah</a></h4>
                             </div>
                         </div>
                     </a>
                 </div>
             </div>
-            <br>
-            <br>
-            <div class="text-center" data-aos="fade-left">
-                <a href="produk.php"><button class="btn btn-primary btn-lg px-3 py-3 me-sm-3 fs-6 fw-bolder" style="border-radius: 20px;border: 2px solid #eee;">Lihat Seluruh Produk</button></a>
-            </div>
+
+
+
+        </div>
+        <br>
+        <br>
+        <div class="text-center" data-aos="fade-left">
+            <a href="produk.php"><button class="btn btn-primary btn-lg px-3 py-3 me-sm-3 fs-6 fw-bolder" style="border-radius: 20px;border: 2px solid #eee;">Lihat Seluruh Produk</button></a>
+        </div>
         </div>
     </section><!-- End Featured Section -->
 

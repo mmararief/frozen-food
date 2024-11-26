@@ -1,15 +1,5 @@
 <?php
-/*
-  | Source Code Aplikasi Toko PHP & MySQL
-  | 
-  | @package   : kynan
-  | @file	   : pengeluaran.php 
-  | @author    : kynan@gmail.com
-  | 
-  | 
-  | 
-  | 
- */
+
 require '../../koneksi/koneksi.php';
 $title_web = 'Daftar Pengeluaran';
 include '../header.php';

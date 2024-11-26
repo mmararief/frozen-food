@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Nov 19, 2024 at 10:50 AM
+-- Generation Time: Nov 26, 2024 at 02:33 PM
 -- Server version: 10.4.32-MariaDB
 -- PHP Version: 8.2.12
 
@@ -69,11 +69,10 @@ CREATE TABLE `kategori` (
 --
 
 INSERT INTO `kategori` (`id_kategori`, `nama_kategori`, `tgl_input`) VALUES
-(1, 'Cake dan Roti', '28 April 2024, 23:57'),
+(1, 'Kue', '28 April 2024, 23:57'),
 (8, 'Cemilan', '16 May 2024, 13:15'),
-(9, 'Healthy Drink', '16 May 2024, 13:15'),
-(10, 'Sambal dan Bumbu', '16 May 2024, 13:15'),
-(12, 'Minuman', '16 May 2024, 13:17');
+(9, 'Frozen Food', '16 May 2024, 13:15'),
+(10, 'Buah', '16 May 2024, 13:15');
 
 -- --------------------------------------------------------
 
@@ -99,18 +98,18 @@ CREATE TABLE `konfirmasi` (
 --
 
 INSERT INTO `konfirmasi` (`id`, `tanggal`, `via`, `nama`, `nama_produk`, `whatsapp`, `alamat`, `metode_pembayaran`, `jumlah`, `status`) VALUES
-(1, '2024-05-17 12:39:46', 'Online', 'fiqih alamsyah', 'mac n cheese, mac n cheese, Arem arem mie', '081286820815', 'setiadarma', 'BCA - 3431108079 - Arie Sutrisno', 70000, 'Selesai'),
-(2, '2024-05-17 12:42:36', 'Online', 'fiqih alamsyah', 'Sosis solo, Sosis solo', '081286820815', 'Gunadarma', 'QR Dana', 10000, 'Selesai'),
-(9, '2024-05-19 00:00:00', 'Offline', 'fiqih alamsyah', 'kue kering', '6281213417445', '', 'Cash', 45000, 'Selesai'),
-(10, '2024-05-19 00:00:00', 'Offline', 'Aini', 'Kue Kering', '6285718705615', '', 'Hutang', 50000, 'Selesai'),
-(11, '2024-05-17 00:00:00', 'Offline', 'Aini', 'peyek kacang dan rebon', '6285718705615', '', 'Cash', 100000, 'Selesai'),
-(12, '2024-05-19 13:21:38', 'Online', 'fiqih alamsyah', 'peyek kacang dan rebon', '081286820815', '', 'QR Dana', 5000, 'Selesai'),
-(13, '2024-05-19 13:23:39', 'Online', 'fiqih alamsyah', 'kunyit asemm', '081286820815', '', 'BCA - 3431108079 - Arie Sutrisno', 50000, 'Selesai'),
-(14, '2024-05-19 13:30:32', 'Online', 'fiqih alamsyah', 'sambal cumi baby, sambal cumi baby, sambal cumi baby', '6281286820815', 'setiadarma', 'Mandiri - 1670001843779 - Arie Sutrisno', 180000, 'Selesai'),
-(15, '2024-11-19 09:37:33', 'Online', 'ammar', 'kunyit asemm x1, mac n cheese x3, Lumpia Semarang x1', '628872588744', 'asdas', 'BCA - 3431108079 - Arie Sutrisno', 120000, 'Proses'),
-(16, '2024-11-19 09:59:48', 'Online', 'dsadas', 'kunyit asemm x1, mac n cheese x1, peyek kacang dan rebon x1, Pastel bihun x1, Bongko pisang x1, Lapis Pelangi x1, Bubur sumsum x1, Arem arem mie x1, Ketan serundeng x1, Pukis x1, Lumpia Semarang x1', '62231312213123', '123123123', 'Mandiri - 1670001843779 - Arie Sutrisno', 166000, 'Proses'),
-(17, '2024-11-19 10:06:02', 'Online', 'asdasd', 'kunyit asemm x1', '628872588744', 'dqwd', 'BCA - 3431108079 - Arie Sutrisno', 50000, 'Selesai'),
-(18, '2024-11-19 10:07:36', 'Online', 'DSA', 'sambal cumi baby x1, kunyit asemm x1', '622313123', 'ASDASDASD', 'BCA - 3431108079 - Arie Sutrisno', 110000, 'Selesai');
+(19, '2024-11-26 13:46:44', 'Online', 'faiz', 'Roti Maryam  x1, Pastel x1, Samosa x1', '6281289778826', 'vip', 'BCA - 3431108079 - Arie Sutrisno', 45000, 'Selesai'),
+(20, '2024-11-26 13:49:44', 'Online', 'faiz', 'Dimsum x1', '6281289778826', 'villa indah permai, bekasi utara', 'BCA - 3431108079 - Arie Sutrisno', 15000, 'Proses'),
+(21, '2024-11-26 13:58:53', 'Online', 'Ammar', 'Roti Maryam  x1, Bakso Frozen x1', '628872588744', 'Prima', 'BCA - 3431108079 - Arie Sutrisno', 75000, 'Proses'),
+(22, '2024-11-26 14:00:13', 'Online', 'Ammar', 'Roti Maryam  x1, Bakso Frozen x1', '628872588744', 'Prima', 'BCA - 3431108079 - Arie Sutrisno', 75000, 'Proses'),
+(23, '2024-11-26 14:00:39', 'Online', 'ammar', 'Roti Maryam  x1', '6212312312', 'qweqwe', 'Mandiri - 1670001843779 - Arie Sutrisno', 5000, 'Proses'),
+(24, '2024-11-26 14:03:23', 'Online', 'asdas', 'Roti Maryam  x1', '628872588744', 'asdasd', 'BCA - 3431108079 - Arie Sutrisno', 5000, 'Proses'),
+(25, '2024-11-26 14:05:28', 'Online', 'asdas', 'Roti Maryam  x1', '628872588744', 'asdasd', 'BCA - 3431108079 - Arie Sutrisno', 5000, 'Proses'),
+(26, '2024-11-26 14:05:52', 'Online', 'a', 'Roti Maryam  x1, Bakso Frozen x1', '628872588744', 'sdfsf', 'BCA - 3431108079 - Arie Sutrisno', 75000, 'Proses'),
+(27, '2024-11-26 14:12:50', 'Online', 'faiz', 'Dimsum x1, Pastel x1', '6281289778826', 'villa indah permai, bekasi utara', 'BCA - 3431108079 - Arie Sutrisno', 35000, 'Proses'),
+(28, '2024-11-26 14:15:20', 'Online', 'Ammar', 'Roti Maryam  x1', '628872588744', 'Prima', 'BCA - 3431108079 - Arie Sutrisno', 5000, 'Proses'),
+(29, '2024-11-26 14:20:40', 'Online', 'Test', 'Bakso Frozen x1', '628872588744', 'Ee', 'BCA - 3431108079 - Arie Sutrisno', 70000, 'Proses'),
+(30, '2024-11-26 14:28:26', 'Online', 'adit', 'Roti Maryam  x1', '6281289778826', 'depok', 'BCA - 3431108079 - Arie Sutrisno', 5000, 'Proses');
 
 -- --------------------------------------------------------
 
@@ -122,7 +121,7 @@ CREATE TABLE `landingpage` (
   `id` int(11) NOT NULL,
   `title` varchar(255) NOT NULL,
   `subtitle` varchar(255) NOT NULL,
-  `prom` varchar(255) NOT NULL
+  `prom` text NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
@@ -130,7 +129,7 @@ CREATE TABLE `landingpage` (
 --
 
 INSERT INTO `landingpage` (`id`, `title`, `subtitle`, `prom`) VALUES
-(1, 'Duta Frozen', 'Temani Harimu dengan Cemilan Istimewa', 'Berbagai macam cemilan homemade dari bahan pilihan hadir disini');
+(1, 'Duta Frozen', 'Solusi praktis untuk Santapan lezat ', 'Kami menghadirkan beragam pilihan makanan beku premium yang siap memanjakan selera Anda. Dari seafood segar hingga olahan siap saji, Duta Frozen menjamin kualitas, kesegaran, dan kehigienisan produk kami. Nikmati kemudahan memasak dan kepuasan citarasa dalam setiap hidangan!');
 
 -- --------------------------------------------------------
 
@@ -151,7 +150,7 @@ CREATE TABLE `login` (
 --
 
 INSERT INTO `login` (`id_login`, `nama_pengguna`, `username`, `password`, `level`) VALUES
-(1, 'Kynan', 'admin', '21232f297a57a5a743894a0e4a801fc3', 'admin');
+(1, 'Duta Frozen', 'admin', '21232f297a57a5a743894a0e4a801fc3', 'admin');
 
 -- --------------------------------------------------------
 
@@ -187,7 +186,8 @@ INSERT INTO `pemasukan` (`id_pemasukan`, `tanggal`, `keterangan`, `sumber`, `jum
 (19, '2024-05-19', 'sambal cumi baby, sambal cumi baby, sambal cumi baby', 'Penjualan', 180000),
 (20, '2024-11-19', 'sambal cumi baby x1, kunyit asemm x1', 'Penjualan', 110000),
 (21, '2024-11-19', 'kunyit asemm x1', 'Penjualan', 50000),
-(22, '2024-11-19', 'kunyit asemm x1', 'Penjualan', 50000);
+(22, '2024-11-19', 'kunyit asemm x1', 'Penjualan', 50000),
+(23, '2024-11-26', 'Roti Maryam  x1, Pastel x1, Samosa x1', 'Penjualan', 45000);
 
 -- --------------------------------------------------------
 
@@ -234,29 +234,21 @@ CREATE TABLE `produk` (
 --
 
 INSERT INTO `produk` (`id_produk`, `id_kategori`, `nama_produk`, `harga`, `status`, `gambar`) VALUES
-(1, 1, 'Bolu Pelangi', 50000, 'PO', '1715091332.png'),
-(2, 1, 'Marmer Cake', 10000, 'Tidak PO', '1715091561.png'),
-(3, 1, 'CurryPuff Isi 10', 45000, 'PO', '1715090407.png'),
-(4, 1, 'Curry Puff', 5000, 'PO', '1715090462.png'),
-(5, 1, 'Vanilla cream puff', 100000, 'Tidak PO', '1715090496.png'),
-(6, 1, 'Roti sisir', 10000, 'Tidak PO', '1715090541.png'),
-(7, 1, 'Roti goreng isi daging', 30000, 'PO', '1715090565.png'),
-(8, 1, 'Roti goreng kacang hijau', 15000, 'Tidak PO', '1715784533.png'),
-(13, 8, 'Bongko pisang', 30000, 'PO', '1715858480.png'),
-(14, 8, 'Bubur sumsum', 3000, 'Tidak PO', '1715858521.png'),
-(15, 8, 'Lapis Pelangi', 5000, 'Tidak PO', '1715858538.png'),
-(16, 8, 'Pukis', 4000, 'Tidak PO', '1715858605.png'),
-(17, 8, 'Ketan serundeng', 6000, 'Tidak PO', '1715858649.png'),
-(19, 8, 'Arem arem mie', 30000, 'Tidak PO', '1715858782.png'),
-(20, 8, 'Risol mlepuh', 2000, 'PO', '1715858820.png'),
-(21, 8, 'Pastel bihun', 3000, 'PO', '1715858843.png'),
-(22, 8, 'Lumpia Semarang', 10000, 'Tidak PO', '1715858878.png'),
-(23, 8, 'Sosis solo', 5000, 'Tidak PO', '1715858921.png'),
-(24, 8, 'Sempol ayam', 1000, 'Tidak PO', '1715858939.png'),
-(25, 8, 'peyek kacang dan rebon', 5000, 'Tidak PO', '1715858954.png'),
-(26, 8, 'mac n cheese', 20000, 'PO', '1715858970.png'),
-(27, 9, 'kunyit asemm', 50000, 'PO', '1715858990.png'),
-(28, 10, 'sambal cumi baby', 60000, 'PO', '1715859009.png');
+(30, 1, 'zuppa soup', 15000, 'Tidak PO', '1732624170.jpg'),
+(31, 1, 'Donat', 20000, 'Tidak PO', '1732624209.jpg'),
+(32, 9, 'Chicker Karage', 40000, 'Tidak PO', '1732624250.jpg'),
+(33, 10, 'Kurma Ranuna', 80000, 'Tidak PO', '1732624295.jpg'),
+(34, 8, 'Tekwan', 20000, 'Tidak PO', '1732624343.jpg'),
+(35, 1, 'Roti Srikaya', 8000, 'Tidak PO', '1732624408.jpg'),
+(36, 9, 'Tahu Baso', 20000, 'Tidak PO', '1732624444.jpg'),
+(37, 10, 'Kurma NR', 90000, 'Tidak PO', '1732624476.jpg'),
+(38, 9, 'Bebek ungkep frozen', 50000, 'Tidak PO', '1732624518.jpg'),
+(39, 9, 'Gyoza isi 10', 30000, 'Tidak PO', '1732624595.jpg'),
+(40, 9, 'Samosa', 20000, 'Tidak PO', '1732624652.jpg'),
+(41, 9, 'Pastel', 20000, 'Tidak PO', '1732624696.jpg'),
+(42, 9, 'Dimsum', 15000, 'Tidak PO', '1732624744.jpg'),
+(43, 9, 'Bakso Frozen', 70000, 'Tidak PO', '1732624787.jpg'),
+(44, 1, 'Roti Maryam ', 5000, 'Tidak PO', '1732625095.jpg');
 
 -- --------------------------------------------------------
 
@@ -359,7 +351,7 @@ ALTER TABLE `kategori`
 -- AUTO_INCREMENT for table `konfirmasi`
 --
 ALTER TABLE `konfirmasi`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=19;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=31;
 
 --
 -- AUTO_INCREMENT for table `landingpage`
@@ -377,7 +369,7 @@ ALTER TABLE `login`
 -- AUTO_INCREMENT for table `pemasukan`
 --
 ALTER TABLE `pemasukan`
-  MODIFY `id_pemasukan` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=23;
+  MODIFY `id_pemasukan` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=24;
 
 --
 -- AUTO_INCREMENT for table `pengeluaran`
@@ -389,7 +381,7 @@ ALTER TABLE `pengeluaran`
 -- AUTO_INCREMENT for table `produk`
 --
 ALTER TABLE `produk`
-  MODIFY `id_produk` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=30;
+  MODIFY `id_produk` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=45;
 
 --
 -- AUTO_INCREMENT for table `rekening`

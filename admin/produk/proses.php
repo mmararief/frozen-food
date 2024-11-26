@@ -1,15 +1,5 @@
 <?php
-/*
-  | Source Code Aplikasi Toko PHP & MySQL
-  | 
-  | @package   : kynan
-  | @file	   : proses.php
-  | @author    : kynan@gmail.com
-  | 
-  | 
-  | 
-  | 
- */
+
 ?>
 
 <!DOCTYPE html>
