@@ -174,10 +174,7 @@ $pagination_link_page = $pagination_link . (empty($query_params) ? '' : '&') . '
             <?php foreach ($query_paginated as $isi) : ?>
                 <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
                     <div class="card h-100">
-                        <a href="detail.php?id=<?php echo $isi['id_produk']; ?>" class="position-relative d-block">
                             <img src="admin/assets/image/<?php echo $isi['gambar']; ?>" class="card-img-top" alt="<?php echo $isi['nama_produk']; ?>">
-                            <div class="overlay">Tap to see detail</div>
-                        </a>
                         <div class="card-body">
                             <div class="btn-container">
                                 <div class="btn <?= $isi['status'] == 'PO' ? 'btn-danger' : 'btn-primary' ?> btn-sm">

@@ -55,12 +55,12 @@ include 'header.php';
                             $data = $row->fetch(PDO::FETCH_OBJ);
                             ?>
                             <div>
-                                <h2 class="display-3 fw-bolder mb-5" style="color: black;text-shadow: 2px 2px 4px #222;"><?= $data->title; ?></h2>
+                                <h2 class="display-3 fw-bolder mb-5" style="color: black;text-shadow: 2px 2px 5px #222;"><?= $data->title; ?></h2>
                                 <h4 style="color: blue;text-shadow: 0 0 3px #fff, 0 0 5px #fff;">
                                     <?= $data->subtitle; ?> <br> <?= $data->prom; ?>
                                 </h4>
                                 <a href="produk.php"><button class="btn btn-primary btn-lg px-3 py-3 me-sm-3 fs-6 fw-bolder" style="border-radius: 20px;border: 2px solid #eee;"><i class="fa fa-opencart"></i> Seluruh Produk</button></a>
-                                <a type="submit" onclick="window.location.href='./#kontak'"><button class="btn btn-info btn-lg px-3 py-3 me-sm-3 fs-6 fw-bolder" style="border-radius: 20px;border: 2px solid #eee;"><i class="fa fa-phone-square faa-tada animated-hover"></i> Kontak Kami</button></a>
+                                <a type="submit" onclick="window.location.href='./#kontak'"><button class="btn btn-primary btn-lg px-3 py-3 me-sm-3 fs-6 fw-bolder" style="border-radius: 20px;border: 2px solid #eee;"><i class="fa fa-phone-square faa-tada animated-hover"></i> Kontak Kami</button></a>
                             </div>
                         </div>
                     </div>
@@ -142,7 +142,7 @@ include 'header.php';
                 <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-left" data-aos-delay="300">
                     <a href="produk.php?cari=&category=1" title="Lihat Cake dan Roti">
                         <div class="card">
-                            <img class="card-img-top img-fix" src="assets/img/iklan/1.jpg" alt="Cake dan Roti">
+                            <img class="card-img-top img-fix" src="assets/img/slide/slide-frozen/slide10.jpg" alt="Cake dan Roti">
                             <div class="card-body icon-box" style="text-align: center;">
                                 <h4 class="card-title"><a href="produk.php?cari=&category=1" title="Lihat Cake dan Roti">Cemilan</a></h4>
                             </div>
@@ -153,7 +153,7 @@ include 'header.php';
                 <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-left" data-aos-delay="300">
                     <a href="produk.php?cari=&category=8" title="Lihat Cemilan">
                         <div class="card">
-                            <img class="card-img-top img-fix" src="assets/img/iklan/2.jpg" alt="Cemilan">
+                            <img class="card-img-top img-fix" src="assets/img/slide/slide-frozen/slide6.jpg" alt="Cemilan">
                             <div class="card-body icon-box" style="text-align: center;">
                                 <h4 class="card-title"><a href="produk.php?cari=&category=8" title="Lihat Cemilan">Kue</a></h4>
                             </div>
@@ -164,7 +164,7 @@ include 'header.php';
                 <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-left" data-aos-delay="300">
                     <a href="produk.php?cari=&category=9" title="Lihat Healthy Drink">
                         <div class="card">
-                            <img class="card-img-top img-fix" src="assets/img/iklan/3.jpg" alt="Healthy Drink">
+                            <img class="card-img-top img-fix" src="assets/img/slide/slide-frozen/slide9.jpg" alt="Healthy Drink">
                             <div class="card-body icon-box" style="text-align: center;">
                                 <h4 class="card-title"><a href="produk.php?cari=&category=9" title="Lihat Healthy Drink">Frozen Food</a></h4>
                             </div>
